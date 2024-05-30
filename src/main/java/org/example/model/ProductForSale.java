@@ -1,11 +1,9 @@
 package org.example.model;
 
 public abstract class ProductForSale {
-
     private String type;
-    private  double price;
+    private double price;
     private String description;
-
 
     public ProductForSale(String type, double price, String description) {
         this.type = type;
@@ -25,11 +23,9 @@ public abstract class ProductForSale {
         return description;
     }
 
-
-    public double getPrice(int quantity) {
-        return price * quantity;
+    public double getSalesPrice(int quantity) {
+        return quantity * price;
     }
 
     public abstract void showDetails();
-
 }
