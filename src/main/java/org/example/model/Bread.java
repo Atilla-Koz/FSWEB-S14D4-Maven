@@ -8,6 +8,11 @@ public class Bread extends ProductForSale {
         this.size = size;
     }
 
+    public Bread(String type, double price, String description) {
+        super(type, price, description);
+    }
+
+
     @Override
     public void showDetails() {
         System.out.println("Type: " + getType());

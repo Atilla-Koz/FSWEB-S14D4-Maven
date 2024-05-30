@@ -7,6 +7,10 @@ public class Coke extends ProductForSale {
         super(type, price, description);
         this.volume = volume;
     }
+    public Coke(String type, double price, String description) {
+        super(type, price, description);
+
+    }
 
     @Override
     public void showDetails() {

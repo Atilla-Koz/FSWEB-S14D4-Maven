@@ -7,6 +7,10 @@ public class Chocolate extends ProductForSale {
         super(type, price, description);
         this.flavor = flavor;
     }
+    public Chocolate(String type, double price, String description) {
+        super(type, price, description);
+
+    }
 
     @Override
     public void showDetails() {
