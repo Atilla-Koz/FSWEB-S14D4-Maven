@@ -1,17 +1,15 @@
 package org.example.rpg;
 
 public abstract class Monster {
-
     private String name;
     private int hitPoints;
-    private int damege;
+    private double damage;
 
-    public Monster(String name, int hitPoints, int damege) {
+    public Monster(String name, int hitPoints, double damage) {
         this.name = name;
         this.hitPoints = hitPoints;
-        this.damege = damege;
+        this.damage = damage;
     }
-
 
     public String getName() {
         return name;
@@ -21,12 +19,11 @@ public abstract class Monster {
         return hitPoints;
     }
 
-    public int getDamege() {
-        return damege;
+    public double getDamage() {
+        return damage;
     }
 
-   public double attack(){
-         return getDamege();
-   }
-
+    public double attack() {
+        return getDamage();
+    }
 }

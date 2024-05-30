@@ -1,7 +1,6 @@
 package org.example.model;
 
-public class Coke extends ProductForSale{
-
+public class Coke extends ProductForSale {
     private int volume;
 
     public Coke(String type, double price, String description, int volume) {
@@ -14,6 +13,6 @@ public class Coke extends ProductForSale{
         System.out.println("Type: " + getType());
         System.out.println("Price: " + getPrice());
         System.out.println("Description: " + getDescription());
-        System.out.println("Volume: " + volume);
+        System.out.println("Volume: " + volume + "ml");
     }
 }
